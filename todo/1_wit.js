@@ -29,7 +29,7 @@ const client = new Wit({
       });
     },
     /**
-     * TODO Replace functionName with the name of the function specified in the wit.ai console
+     * //TODO Replace functionName with the name of the function specified in the wit.ai console
      * 
      */
     functionName({sessionId, context, text, entities}) {
