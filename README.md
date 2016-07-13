@@ -13,14 +13,24 @@
 
 ##Code!
 1. Wit.ai
- * get your server key from the wit.ai console
+ * get your server key from the wit.ai console [wit.ai](https://wit.ai/)
  * put your wit.ai key in the lib/Helper.js file
  * Open todo/1_wit.js and look for the TODOs
 
 2. Slack bot
- * get your bot key by creating the bot on the slack integration website
+ * get your bot key by creating the bot on the slack integration website [slack.com](https://edfdigitalinnovation.slack.com/apps/A0F7YS25R-bots)
  * put your slack key in the lib/Helper.js file
  * Open todo/2_slack.js and look for the TODOs
  
 3. AI Bot
  * Open todo/3_bot.js and look for the TODOs
+
+##Other
+The repository contains a folder **done**, with workings versions of the three files contained in the **todo** folder
+
+##Resources
+[Wit Node.js SDK](https://github.com/wit-ai/node-wit)
+[Wit docs](https://wit.ai/docs)
+[Howdy Botkit libraby](https://github.com/howdyai/botkit)
+[Howdy Botkit docs for Slack](https://github.com/howdyai/botkit/blob/master/readme-slack.md)
+[Slack API docs](https://api.slack.com/)
