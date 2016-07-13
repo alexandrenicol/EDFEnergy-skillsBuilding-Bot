@@ -54,27 +54,33 @@ var handleRequest = function (bot, message) {
           //get entities
           var phrase_to_translate = Helper.firstEntityValue(entities, 'phrase_to_translate');
           var language = Helper.firstEntityValue(entities, 'language');
-          var language2 = Helper.firstEntityValue(entities, 'language2');
           
           //check entities
-          if (phrase_to_translate && language && language2) {
-            console.log('test');
+          if (phrase_to_translate && language ) {
+            console.log('test', language);
             
             //request options
             let options = {
-              url: 'https://glosbe.com/gapi/translate?from='+Lang.getCode(language)+'&dest='+Lang.getCode(language2)+'&format=json&phrase='+phrase_to_translate,
+              url: 'https://glosbe.com/gapi/translate?from=en&dest='+Lang.getCode(language)+'&format=json&phrase='+phrase_to_translate,
               method: 'GET'
             }
+            
+            console.log(options.url);
             
             //call request
             request(options, function (error, response, body) {
               if (!error && response.statusCode == 200) {
                 // fetch the response
                 body = JSON.parse(body);
-                
+                console.log(body);
                 //update context
                 context.success = true;
-                context.translation = body.tuc[0].phrase.text;
+                try {
+                  context.translation = body.tuc[0].phrase.text;
+                } catch(err) {
+                  context.translation = "failed";
+                }
+                
                 
                 //resolve the promise
                 return resolve(context);
