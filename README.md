@@ -1,11 +1,11 @@
-###EDF Energy Digital Innovation - Skills building session - Bot
+#EDF Energy Digital Innovation - Skills building session - Bot
 
-0. install node 6.x https://nodejs.org/en/download/
-0. check you can use git 
-0. create a wit.ai account https://wit.ai/
-0. install postman https://www.getpostman.com/
+##Requirements
+1. install node 6.x https://nodejs.org/en/download/
+2. install postman https://www.getpostman.com/
+3. 3. create a wit.ai account https://wit.ai/
 
-
+##Get started
 1. clone this git repository
 
 2. run 'npm <cmd>'
