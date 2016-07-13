@@ -12,7 +12,15 @@
 4. delete the .git repositories
 
 ##Code!
-1. put your wit.ai key in the lib/Helper.js file
-2. Open todo/1_wit.js and look for the TODOs
-3. Open todo/2_slack.js and look for the TODOs
-4. Open todo/3_bot.js and look for the TODOs
+1. Wit.ai
+ * get your server key from the wit.ai console
+ * put your wit.ai key in the lib/Helper.js file
+ * Open todo/1_wit.js and look for the TODOs
+
+2. Slack bot
+ * get your bot key by creating the bot on the slack integration website
+ * put your slack key in the lib/Helper.js file
+ * Open todo/2_slack.js and look for the TODOs
+ 
+3. AI Bot
+ * Open todo/3_bot.js and look for the TODOs
