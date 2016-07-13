@@ -1,0 +1,17 @@
+{
+  "name": "edfdi-sb-bot",
+  "version": "1.0.0",
+  "description": "EDF Energy Digital Innovation - Skills Building session - Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexandrenicol",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.2.2",
+    "express": "^4.14.0",
+    "node-wit": "^4.0.0",
+    "underscore": "^1.8.3"
+  }
+}
