@@ -6,9 +6,6 @@ const Helper = require('../lib/Helper');
 //initiliase the server;
 var app = Helper.init();
 
-//global variable that will contain the text response from wit.ai
-var witResponse = undefined;
-
 //wit.ai class
 const client = new Wit({
   accessToken: Helper.witServerToken(),
@@ -22,7 +19,7 @@ const client = new Wit({
       const {sessionId, context, entities} = request;
       const {text, quickreplies} = response;
       //Saving the response in our global variable
-      witResponse = text;
+      client.witResponse = text;
       return new Promise(function(resolve, reject) {
         console.log('sending...', JSON.stringify(response));
         return resolve();
