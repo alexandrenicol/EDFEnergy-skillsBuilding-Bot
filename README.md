@@ -16,6 +16,7 @@
  * get your server key from the wit.ai console [wit.ai](https://wit.ai/)
  * put your wit.ai key in the lib/Helper.js file
  * Open todo/1_wit.js and look for the TODOs
+  * Get functions documentation [here](https://github.com/wit-ai/node-wit)
 
 2. Slack bot
  * get your bot key by creating the bot on the slack integration website [slack.com](https://edfdigitalinnovation.slack.com/apps/A0F7YS25R-bots)
