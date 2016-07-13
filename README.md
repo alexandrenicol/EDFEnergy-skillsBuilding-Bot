@@ -30,7 +30,12 @@ The repository contains a folder **done**, with workings versions of the three f
 
 ##Resources
 [Wit Node.js SDK](https://github.com/wit-ai/node-wit)
+
 [Wit docs](https://wit.ai/docs)
+
 [Howdy Botkit libraby](https://github.com/howdyai/botkit)
+
 [Howdy Botkit docs for Slack](https://github.com/howdyai/botkit/blob/master/readme-slack.md)
+
 [Slack API docs](https://api.slack.com/)
+
