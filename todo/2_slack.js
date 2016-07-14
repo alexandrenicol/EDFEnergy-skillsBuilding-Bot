@@ -26,7 +26,8 @@ var bot = controller.spawn({
 // - mention
 // - ambient
 // + Slack API native event https://api.slack.com/events
-const events = 'direct_message,direct_mention';
+
+const events = '';
 
 //defining our bot capabilities
 controller.on(events, function(bot,message) {
@@ -34,6 +35,6 @@ controller.on(events, function(bot,message) {
   // - fetch the message
   // - add some logic
   // - replying (use the bot.reply method)
-  bot.reply(message, 'You said: '+message.text);
+
 });
 

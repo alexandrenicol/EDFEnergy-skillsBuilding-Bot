@@ -52,35 +52,12 @@ var handleRequest = function (bot, message) {
        * TODO Replace functionName with the name of the function specified in the wit.ai console
        * 
        */
-      myFunction({sessionId, context, text, entities}) {
+
+      functionName({sessionId, context, text, entities}) {
         let promise = new Promise(function(resolve, reject) {
           //TODO
-          let name = Helper.firstEntityValue(entities, 'name');
           // 1. fetch the entities value --> use Helper.firstEntityValue(entities, 'entityName')
           // 2. check the entity has been defined
-          if (name) {
-            context.success = true;
-            context.name = 'Your new name';
-            context.surname = 'Nicol';
-          }
-          // 3. if so, add the value 'true' to the 'success' key of 'context'
-          // 4. add some logic - fetch value from API - alter context variable
-          resolve(context);
-        });
-        return promise;
-      
-      },
-      weather({sessionId, context, text, entities}) {
-        let promise = new Promise(function(resolve, reject) {
-          //TODO
-          let location = Helper.firstEntityValue(entities, 'location');
-          // 1. fetch the entities value --> use Helper.firstEntityValue(entities, 'entityName')
-          // 2. check the entity has been defined
-          
-          if (location) {
-            context.success = true;
-            context.location = location;
-          }
           // 3. if so, add the value 'true' to the 'success' key of 'context'
           // 4. add some logic - fetch value from API - alter context variable
           resolve(context);
